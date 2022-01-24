@@ -1,16 +1,14 @@
 ---
 // Component Imports
-import Tour from '../components/Tour.astro';
-import DefaultView from '../layouts/DefaultView.astro';
-
+// import Tour from '../components/Tour.astro';
 // You can import components from any supported Framework here!
-import SvelteCounter from '../components/SvelteCounter.svelte';
+// import SvelteCounter from '../components/SvelteCounter.svelte';
 
 // Component Script:
 // You can write any JavaScript/TypeScript that you'd like here.
 // It will run during the build, but never in the browser.
 // All variables are available to use in the HTML template below.
-let title = 'My Astro Site';
+let title = 'My Astro Site - now with a theme';
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
@@ -31,6 +29,7 @@ let title = 'My Astro Site';
 			flex-direction: column;
 			gap: 1em;
 			max-width: min(100%, 68ch);
+            background: hotpink;
 		}
 	</style>
 </head>
@@ -42,10 +41,8 @@ let title = 'My Astro Site';
 				<h1>Welcome to <a href="https://astro.build/">Astro</a></h1>
 			</div>
 		</header>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat earum quaerat ratione doloremque fugit laudantium eius recusandae beatae mollitia ea aut magnam deleniti eligendi cupiditate perferendis, maiores dolores voluptas dolorem., ipsum dolor sit amet consectetur adipisicing elit. Nemo, minima quo, aliquid beatae ipsa ipsum odio fuga quia dignissimos expedita debitis dolore. Quisquam nam molestias reiciendis ea dicta doloremque laborum. ipsum dolor sit, amet consectetur adipisicing elit. Sequi voluptate pariatur autem voluptatum aperiam, corporis inventore rerum magnam. Quasi, commodi. Tenetur rerum sunt non voluptate quam consectetur dicta minima accusantium?</p>
 
-		<Tour />
-
+<slot />
 		<!--
 
 		You can also use imported framework components directly in your markup!
@@ -57,7 +54,6 @@ let title = 'My Astro Site';
 
 		-->
 
-		<SvelteCounter client:visible />
 	</main>
 </body>
 </html>

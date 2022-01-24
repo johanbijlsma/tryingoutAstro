@@ -26,3 +26,11 @@ body {
 		color: #fff;
 	}
 }
+
+header {
+			display: flex;
+			flex-direction: column;
+			gap: 1em;
+			max-width: min(100%, 68ch);
+            background: white;
+		}

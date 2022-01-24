@@ -18,6 +18,7 @@ Inside of your Astro project, you'll see the following folders and files:
 │   │   └── Tour.astro
 │   └── pages/
 │       └── index.astro
+│       └── subpage.astro
 └── package.json
 ```
 
