@@ -24,6 +24,9 @@ body {
 	justify-content: center;
 	background: #f9fafb;
 	color: #111827;
+	img {
+		max-width: 300px;
+	}
 }
 
 @media (prefers-color-scheme: dark) {
