@@ -1,6 +1,7 @@
 ---
-// Component Imports
+    // Component Imports
 
+    import { Debug } from 'astro/components';
 import DefaultView from '../layouts/DefaultView.astro';
 
 
@@ -13,13 +14,26 @@ let title = 'My Astro Site - subpage';
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
+const data = Astro.fetchContent('../pages/blogs/*.md'); // returns an array of posts that live at ./src/pages/post/*.md
 ---
 <DefaultView>
 
 Here is an overview of all the blogs:
 
+<!-- <ul>
+    <li><a href="blogs/explaing-frontend-lingo">Explaining modern Front-end lingo</a></li>
+</ul> -->
 
 
+<div>
+{data.slice(0, 3).map((post) => (
+  <article>
+    <h1>{post.title}</h1>
+    <p>{post.description}</p>
+    <a href={post.url}>Read more</a>
+  </article>
+))}
+</div>
 		<!--
 
 		You can also use imported framework components directly in your markup!

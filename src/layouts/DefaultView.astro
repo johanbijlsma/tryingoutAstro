@@ -10,6 +10,8 @@
 // All variables are available to use in the HTML template below.
 let title = 'My Astro Site - now with a theme';
 
+const { content } = Astro.props;
+
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
 ---
@@ -42,12 +44,13 @@ let title = 'My Astro Site - now with a theme';
                 <li class="navigation-item"><a href="/subpage">Subpage</a></li>
                 <li class="navigation-item"><a href="/blogs">blogs</a></li>
             </ul></nav>
+            Astro
 				<img width="60" height="80" src="/assets/logo.svg" alt="Astro logo">
 				<h1>Welcome to <a href="https://astro.build/">Astro</a></h1>
 			</div>
 		</header>
 
-<slot />
+<slot/>
 		<!--
 
 		You can also use imported framework components directly in your markup!

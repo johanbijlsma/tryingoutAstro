@@ -1,6 +1,6 @@
 ---
 title: Explaining modern Front-end lingo
-date: 2020-07-07T00:00:00.000+02:00
+date:  07-07-2020
 tags:
 - JavaScript
 - CSS
@@ -9,14 +9,10 @@ tags:
 description: A brief overview of the most-used Front-end terms and names
 image: "https://raw.githubusercontent.com/johanbijlsma/2021_eleventy-forestry/master/src/images/ferenc-almasi-fhAfLtHToCs-unsplash.jpg"
 imageprefix: "https://raw.githubusercontent.com/johanbijlsma/2021_eleventy-forestry/master/src/images/"
-layout: ../../layouts/DefaultView.astro
+layout: ../../layouts/BlogView.astro
 
 
 ---
-
-<img src={frontmatter.image} width="300">
-<img src={frontmatter.imageprefix + 'modernFrontend-img/a11y.png'}>
-
 <p class="lead">In a nutshell, front-end development is basically building websites and components that have a direct correlation with the end-user. In other words: The things that a front-end developer builds, is the thing an end user will see on his or her device.
 </p>
 
@@ -47,8 +43,8 @@ With all the abstractions and tools, there are many buzz words, terms and name t
 
 <p class="shadow">A</p>
 
+![Accessibillity Logo](https://raw.githubusercontent.com/johanbijlsma/2021_eleventy-forestry/master/src/images/modernFrontend-img/a11y.png)
 
-<img src={frontmatter.imageprefix + 'modernFrontend-img/a11y.png'}>
 Accessibility is a container term for technology that should be usable by anyone: No matter if a person has 20-20 vision, visually impaired, or even blind. But it goes further than visual handicaps alone. There is a set of Guideline called the Web Content Accessibility Guidelines, or WCAG for short, with 3 levels of compliance. The newest version is WCAG2.1.
 </div>
 
@@ -56,7 +52,7 @@ Accessibility is a container term for technology that should be usable by anyone
 
 ### Angular
 
-<img src={frontmatter.imageprefix + 'modernFrontend-img/angular-250x250.svg'}>
+![Angular logo](https://raw.githubusercontent.com/johanbijlsma/2021_eleventy-forestry/master/src/images/modernFrontend-img/angular-250x250.svg)
 
 An open source framework developed by Google. In 2020 version 9 was released. The first version, angular.js was released in 2010, but was replaced in 2014 by Angular 2 in 2014. This was a complete rewrite of the framework and was not backward compatible with the first version.
 </div>
@@ -65,15 +61,15 @@ An open source framework developed by Google. In 2020 version 9 was released. Th
 ### Babel.js
 
 <p class="shadow">B</p>
-<img src={frontmatter.imageprefix + 'modernFrontend-img/babeljs-icon.svg'}>
+
+![Babel logo](https://raw.githubusercontent.com/johanbijlsma/2021_eleventy-forestry/master/src/images/modernFrontend-img/babeljs-icon.svg)
 
 A JavaScript library that enables developers to write modern JavaScript (ES5 or newer) for browsers that don't support it. the JavaScript gets recompiled with fallbacks for browsers like Internet Explorer 11.
 </div>
 <div class="list__card animate-in">
 
 ### Bundler
-
-<img src={frontmatter.imageprefix + 'modernFrontend-img/webpack-icon.svg'}>
+![Webpack logo](https://raw.githubusercontent.com/johanbijlsma/2021_eleventy-forestry/master/src/images/modernFrontend-img/webpack-icon.svg)
 
 Well known Bundlers are Webpack, Parcel and Rollup. A bundler is a library that is configurable to walk through a series of steps like combining files, compiling files and creating deploy builds. The latter is a folder with a version of the application in a package that is as small as possible. Usually such a folder is called either "dist", "generated" or "build".
 </div>
@@ -82,7 +78,8 @@ Well known Bundlers are Webpack, Parcel and Rollup. A bundler is a library that 
 ### CI/CD
 
 <p class="shadow">C</p>
-<img src={frontmatter.imageprefix + 'modernFrontend-img/netlify-icon.svg'}>
+
+![Netlify logo](https://raw.githubusercontent.com/johanbijlsma/2021_eleventy-forestry/master/src/images/modernFrontend-img/netlify-icon.svg)
 
 Continuous Integration / Continuous Deployment are terms used for techniques and infrastructures to automatically test and deploy code to different environments such as Test, Acceptation or Production. Most of the time there are hooks and triggers set up, that make it possible that automated test will run when a Pull Request is approved to a branch on the GIT server. When all necessary tests pass, the code will be deployed to the specific environment
 </div>
@@ -90,14 +87,15 @@ Continuous Integration / Continuous Deployment are terms used for techniques and
 
 ### CLI
 
-<img src={frontmatter.imageprefix + 'modernFrontend-img/Terminal_icon_2019.png'}>
+![cli image](https://raw.githubusercontent.com/johanbijlsma/2021_eleventy-forestry/master/src/images/modernFrontend-img/Terminal_icon_2019.png)
+
 An abbreviation for Command Line Interface. the term is used for all things that are executed through the terminal, Command Prompt or Powershell. Within front-end is used a lot for GIT, NPM, Webpack, Anguilar-cli, Vue-cli and create-react-app.
 </div>
 <div class="list__card animate-in">
 
 ### CSS
+![CSS logo](https://raw.githubusercontent.com/johanbijlsma/2021_eleventy-forestry/master/src/images/modernFrontend-img/css3logo.png)
 
-<img src={frontmatter.imageprefix + 'modernFrontend-img/css3logo.png'}>
 Cascading Style Sheets is the technique for declaring the presentation of elements on a page. It's is created by Håkon Wium Lie and Bert Bos in 1996. The newest iteration is CSS3, although this is not an official standard.
 </div>
 <div class="list__card animate-in">
@@ -105,7 +103,9 @@ Cascading Style Sheets is the technique for declaring the presentation of elemen
 ### ECMAScript (ES5, ES6, etc.)
 
 <p class="shadow">E</p>
-<img src={frontmatter.imageprefix + 'modernFrontend-img/js-logo.png'}>
+
+![JS logo](https://raw.githubusercontent.com/johanbijlsma/2021_eleventy-forestry/master/src/images/modernFrontend-img/js-logo.png)
+
 
 The official standard of JavaScript is ECMAScript. ECMA (European Computer Manufacturers Association) is an organization around standardization. Every year there are new things added to the specification. These iterations were than named after the year of implementation (ES2016, ES2017, etc). However, most of the times people are referring to ES6 (which is ES2015), ES7 and so on. The versions that are mentioned the most are ES5 and ES6, since they had the most changes, and are basically the divider between "classic JavaScript" and "modern JavaScript".
 </div>
@@ -114,7 +114,9 @@ The official standard of JavaScript is ECMAScript. ECMA (European Computer Manuf
 ### GIT
 
 <p class="shadow">G</p>
-<img src={frontmatter.imageprefix + 'modernFrontend-img/Git-Logo-1788C.png'}>
+
+![GIT logo](https://raw.githubusercontent.com/johanbijlsma/2021_eleventy-forestry/master/src/images/modernFrontend-img/Git-Logo-1788C.png)
+
 
 A version Control system developed by Linus Torwald that keeps track of changes within folders of a project. Local changes are commited and pushed to a GIT server like GitHub, TFS or Azure Devops.
 </div>
@@ -123,7 +125,7 @@ A version Control system developed by Linus Torwald that keeps track of changes 
 ### HTML
 
 <p class="shadow">H</p>
-<img src={frontmatter.imageprefix + 'modernFrontend-img/HTML5-Logo.sv'}>
+<img src={frontmatter.imageprefix + 'modernFrontend-img/HTML5-Logo.svg'}>
 
 Hyper Text Markup Language is a text based language that declares the structure of a web page. The last iteration is from 2014 and is called HTML5, a big improvement that introduces many new API's and semantic elements.
 </div>
@@ -139,15 +141,15 @@ A method for building sites and applications with JavaScript, API's and Markup. 
 
 ### JavaScript
 
-<img src={frontmatter.imageprefix + 'modernFrontend-img/js-logo.png'}>
+![JS logo](https://raw.githubusercontent.com/johanbijlsma/2021_eleventy-forestry/master/src/images/modernFrontend-img/js-logo.png)
 
 A scripting language that can be used in a browser directly. Originally written by Brendan Eich in only 10 days back in 1995. Newer versions of JavaScript are called ECMAScript.
 </div>
 <div class="list__card animate-in">
 
 ### JSX
+![jsx logo](https://raw.githubusercontent.com/johanbijlsma/2021_eleventy-forestry/master/src/images/modernFrontend-img/jsx.png)
 
-<img src={frontmatter.imageprefix + 'modernFrontend-img/jsx.png'}>
 JSX is the templating language used by React and stands for JavaScript Extended. It combines all 3 three core Front-end languages in one file with a style block, a script block and a template block.
 </div>
 <div class="list__card animate-in">
@@ -173,13 +175,18 @@ One of the most popular JavaScript frameworks, developed by Facebook. Uses JSX a
 ### Sass
 
 <p class="shadow">S</p>
-<img src={frontmatter.imageprefix + 'modernFrontend-img/Sass_Logo_Color.svg'}>
+
+![Sass logo](https://raw.githubusercontent.com/johanbijlsma/2021_eleventy-forestry/master/src/images/modernFrontend-img/Sass_Logo_Color.svg)
+
 "Syntactically Awesome Style Sheets" or Sass for short, is a CSS Preprocessor that enables you to do things with your styling files that can't be done with CSS files. For example: Nesting withing selectors, functions, mixins and variables. That last one is now also available in regular CSS, called "CSS custom-properties".
 </div>
-<img src={frontmatter.imageprefix + 'modernFrontend-img/Svelte_Logo.svg'}>
+
+
+
 <div class="list__card animate-in">
 
 ### Svelte
+![Svelte logo](https://raw.githubusercontent.com/johanbijlsma/2021_eleventy-forestry/master/src/images/modernFrontend-img/Svelte_Logo.svg)
 
 Svelte is the new kid on the block, with a focus on creating a small package for the end user, combined  with a good Developer Experience. One remarkable thing about Svelte, is that it disappears completely. After a deploy build, the only files that are served are an index.html, a bundle.css and a bundle.js.
 </div>
@@ -188,7 +195,8 @@ Svelte is the new kid on the block, with a focus on creating a small package for
 ### TypeScript
 
 <p class="shadow">T</p>
-<img src={frontmatter.imageprefix + 'modernFrontend-img/ts-logo.svg'}>
+
+![TS logo](https://raw.githubusercontent.com/johanbijlsma/2021_eleventy-forestry/master/src/images/modernFrontend-img/ts-logo.svg)
 
 A strongly typed version of JavaScript. With "typed" they mean that every variable has a specific type; for instance a string, number, boolean, etc. This is helpful while developing, because your IDE or Text editor will alert you if you combine types. The first major framework that adopted TypeScript was Angular.
 </div>
@@ -197,7 +205,8 @@ A strongly typed version of JavaScript. With "typed" they mean that every variab
 ### Vanilla JavaScript
 
 <p class="shadow">V</p>
-<img src={frontmatter.imageprefix + 'modernFrontend-img/js-logo.png'}>
+
+![JS logo](https://raw.githubusercontent.com/johanbijlsma/2021_eleventy-forestry/master/src/images/modernFrontend-img/js-logo.png)
 
 A term to refer to plain JavaScript, without frameworks. The name is link to the most basic Ice cream flavor: Vanilla.
 
@@ -206,12 +215,10 @@ A term to refer to plain JavaScript, without frameworks. The name is link to the
 
 ### Vue.JS
 
-
+![Vue logo](https://raw.githubusercontent.com/johanbijlsma/2021_eleventy-forestry/master/src/images/modernFrontend-img/vuejs-icon.svg)
 
 Vue.JS is one of the most used JavaScript Frameworks, and the only one that is not connected to a big corporation. It was launched in 2014 by Evan You, and has only grown since. In 2020 it released the newest version: Vue3.
 </div>
-<img src={frontmatter.imageprefix + 'modernFrontend-img/a11y.png'}>
-<img src={frontmatter.imageprefix + 'modernFrontend-img/vuejs-icon.svg'}>
 
 </div>
 
