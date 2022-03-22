@@ -30,7 +30,7 @@ const { content } = Astro.props;
 			display: flex;
 			flex-direction: column;
 			gap: 1em;
-			max-width: min(100%, 68ch);
+			/* max-width: min(100%, 68ch); */
 
 		}
 	</style>
@@ -42,14 +42,14 @@ const { content } = Astro.props;
             <nav><ul>
                 <li class="navigation-item"><a href="/">Home</a></li>
                 <li class="navigation-item"><a href="/subpage">Subpage</a></li>
-                <li class="navigation-item"><a href="/blogs">blogs</a></li>
+                <li class="navigation-item"><a href="/blogs">Blogs</a></li>
             </ul></nav>
             Astro
 				<img width="60" height="80" src="/assets/logo.svg" alt="Astro logo">
 				<h1>Welcome to <a href="https://astro.build/">Astro</a></h1>
 			</div>
 		</header>
-
+<div class="row">
 <slot/>
 		<!--
 
@@ -62,6 +62,7 @@ const { content } = Astro.props;
 
 		-->
 
+</div>
 	</main>
 </body>
 </html>

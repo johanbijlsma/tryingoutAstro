@@ -125,7 +125,8 @@ A version Control system developed by Linus Torwald that keeps track of changes 
 ### HTML
 
 <p class="shadow">H</p>
-<img src={frontmatter.imageprefix + 'modernFrontend-img/HTML5-Logo.svg'}>
+
+![HTML logo](https://raw.githubusercontent.com/johanbijlsma/2021_eleventy-forestry/master/src/images/modernFrontend-img/HTML5-Logo.svg)
 
 Hyper Text Markup Language is a text based language that declares the structure of a web page. The last iteration is from 2014 and is called HTML5, a big improvement that introduces many new API's and semantic elements.
 </div>

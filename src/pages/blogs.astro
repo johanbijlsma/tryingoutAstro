@@ -24,14 +24,14 @@ Here is an overview of all the blogs:
     <li><a href="blogs/explaing-frontend-lingo">Explaining modern Front-end lingo</a></li>
 </ul> -->
 
-
-<div>
+<div class="card-container row">
 {data.slice(0, 3).map((post) => (
-  <article>
-    <h1>{post.title}</h1>
+  <a href={post.url} class="onethird card">
+  <img src={post.image} alt="">
     <p>{post.description}</p>
-    <a href={post.url}>Read more</a>
-  </article>
+    <h3>{post.title}</h3>
+    <button href={post.url} class="button">Read more</button>
+  </a>
 ))}
 </div>
 		<!--

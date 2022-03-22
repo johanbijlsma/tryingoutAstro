@@ -31,14 +31,14 @@ const { content } = Astro.props;
 			display: flex;
 			flex-direction: column;
 			gap: 1em;
-			max-width: min(100%, 68ch);
+			/* max-width: min(100%, 68ch); */
             position: relative;
 		}
         .container {
             display: flex;
 			flex-direction: column;
 			gap: 1em;
-			max-width: min(100%, 68ch);
+			/* max-width: min(100%, 68ch); */
             position: relative;
         }
 
@@ -95,6 +95,24 @@ const { content } = Astro.props;
             padding: 10px;
             color: #fff
         }
+            span.back{
+            position: absolute;
+            left: 0;
+            top: 48px;
+            z-index: 1;
+            font-size: 13px;
+            background-color: var(--white);
+            opacity: 0.75;
+            border-radius: 0 0 10px 0;
+            padding: 10px;
+            color: var(--text-color)
+        }
+        span.back a:hover, span.back a:focus{
+            color: var(--primary);
+            @media (prefers-color-scheme: dark) {
+                color: var(--primary);
+            }
+        }
 
 	</style>
 </head>
@@ -105,8 +123,9 @@ const { content } = Astro.props;
             <nav><ul>
                 <li class="navigation-item"><a href="/">Home</a></li>
                 <li class="navigation-item"><a href="/subpage">Subpage</a></li>
-                <li class="navigation-item"><a href="/blogs">blogs</a></li>
+                <li class="navigation-item"><a href="/blogs">Blogs</a></li>
             </ul></nav>
+            <span class="back"><a href="/blogs">⬅ Back to the blog overview</a></span>
             <span class="date">{content.date }</span>
             <div class="blog-header">
             <img class="blog-header-img" src={content.image}>
@@ -137,4 +156,5 @@ const { content } = Astro.props;
 </div>
 	</main>
 </body>
+<script src={Astro.resolve('../components/script.js')}></script>
 </html>
